@@ -1,0 +1,212 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background: #58586c;
+}
+.calculator_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6%;
+}
+.calculator {
+    border: 1px solid #000;
+    width: 50%;
+    padding: 0px;
+    background: #181717;
+    /* padding: 6px 10px 6px 8px; */
+    padding: 17px 15px 16px 15px;
+    border-radius: 17px;
+    box-shadow: 0px 0px 4px 3px black;
+}
+input[type="text"] {
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 8px;
+    text-align: end;
+}
+button.diff_operator {
+    width: 28%;
+    height: 60px;
+    border-radius: 16px;
+    font-size: 25px;
+    font-weight: 800;
+    background: #e7d53a;
+    color: #585757;
+    box-shadow: 5px 20px 17px black;
+}
+button.numbers{
+    width: 24%;
+    height: 60px;
+    border-radius: 16px;
+    font-size: 25px;
+    font-weight: 800;
+    background: aliceblue;
+    margin: 2px;
+    color: #000;
+    box-shadow: 40px 16px 50px black;
+}
+button.first-btn{
+    width: 24%;
+    height: 60px;
+    border-radius: 16px;
+    font-size: 25px;
+    font-weight: 800;
+    background: #d7d4d4;
+    color: #000;
+    margin: 2px;
+    box-shadow: 40px 16px 50px black;
+}
+.numbers_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.first_operators{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button.first-btn.color:hover {
+    color: #fff;
+    background: #d94040;
+}
+button.first-btn.color{
+    transition: .4s all;
+}
+button{
+    cursor: pointer;
+}
+button.numbers:hover {
+    background: #d0dadd;
+}
+.start-btn-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+button.start-btn {
+    background: #ef536f;
+    border: none;
+    width: 250px;
+    height: 73px;
+    font-size: 37px;
+    font-family: monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 20px;
+    color: aliceblue;
+    box-shadow: 0px 0px 4px 0px darkslategrey;
+    transition: .4s linear;
+}
+button.start-btn:hover {
+    background: aliceblue;
+    color: #ef536f;
+    transform: scaleX(1.2);
+}
+.inactive{
+    display: none;
+}
+@media only screen and (max-width: 500px) {
+    .calculator {
+        width: 70%;
+    }
+  }
+  @media only screen and (max-width: 370px) {
+  .calculator {
+    width: 80%;
+}
+  }
+  @media only screen and (max-width: 280px) {
+    button.first-btn{
+        font-size: 18px;
+    }
+    button.diff_operator {
+        font-size: 18px;
+    }
+    button.numbers {
+        font-size: 18px;
+    }
+    input#input {
+        height: 45px;
+        font-size: 24px;
+    }
+    button#btn {
+        width: 184px;
+        font-size: 28px;
+    }
+  }
+  @media only screen and (max-width: 240px) {
+    .calculator {
+      margin: 10px;
+    }
+    button.first-btn {
+        width: 52px;
+        height: 50px;
+    }
+    button.diff_operator {
+        width: 65px;
+        height: 50px;
+    }
+    button.numbers {
+        width: 52px;
+        height: 50px;
+    }
+}
+
+  @media only screen and (max-width: 190px) {
+    button.first-btn,button.numbers,button.diff_operator {
+        width: 40px;
+        height: 45px;
+        padding: 2px;
+    }
+    button#btn {
+        width: 123px;
+        font-size: 24px;
+    }
+}
+@media only screen and (max-width: 170px){
+button.first-btn, button.numbers, button.diff_operator {
+    width: 30px;
+    height: 36px;
+    padding: 2px;
+    font-size: 12px;
+}
+}
+@media only screen and (max-width: 140px){
+button.first-btn, button.numbers, button.diff_operator {
+    width: 26px;
+    height: 34px;
+    padding: 1px;
+    font-size: 11px;
+}
+}
+@media only screen and (max-width: 104px){
+button.first-btn, button.numbers, button.diff_operator {
+    width: 33px;
+    height: 26px;
+    padding: 1px;
+    font-size: 6px;
+}
+}
+@media only screen and (max-width: 73px){
+button.first-btn, button.numbers, button.diff_operator {
+    width: 33px;
+    height: 20px;
+    padding: 1px;
+    font-size: 2px;
+}
+}
+button {
+    border: none;
+    margin: 4px;
+}
+button.diff_operator:hover {
+    background: #e1e10b;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="start-btn-container">
+        <button class="start-btn active" id="btn" onclick="start()">Open
+            <span>
+               <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </span>
+        </button>
+    </div>
+    <div class="calculator_container inactive" id="box">
+        <div class="calculator">
+            <div class="input_value_container">
+                <input type="text" placeholder="0" id="input">
+            </div>
+            <div class="first_operators">
+                <button class="first-btn color" onclick="Clear()">C</button>
+                <button class="first-btn" onclick="del()">Del</button>
+                <button class="first-btn" onclick="btnAll('/')">/</button>
+                <button class="diff_operator" onclick="btnAll('*')">X</button>
+            </div>
+            <div class="numbers_container">
+                <button class="numbers" onclick="btnAll('7')">7</button>
+                <button class="numbers" onclick="btnAll('8')">8</button>
+                <button class="numbers" onclick="btnAll('9')">9</button>
+                <button class="diff_operator" onclick="btnAll('-')">-</button>
+            </div>
+            <div class="numbers_container">
+                <button class="numbers" onclick="btnAll('4')">4</button>
+                <button class="numbers" onclick="btnAll('5')">5</button>
+                <button class="numbers" onclick="btnAll('6')">6</button>
+                <button class="diff_operator" onclick="btnAll('+')">+</button>
+            </div>
+            <div class="numbers_container">
+                <button class="numbers" onclick="btnAll('1')">1</button>
+                <button class="numbers" onclick="btnAll('2')">2</button>
+                <button class="numbers" onclick="btnAll('3')">3</button>
+                <button class="diff_operator" onclick="result()">=</button>
+            </div>
+            <div class="numbers_container">
+                <button class="numbers" onclick="btnAll('0')">0</button>
+                <button class="numbers" onclick="btnAll('.')">.</button>
+                <button class="numbers" onclick="btnAll('00')">00</button>
+                <button class="diff_operator" onclick="btnAll('000')">000</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
